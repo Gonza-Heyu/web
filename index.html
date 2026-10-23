@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmony Corporation — Software a medida para comercios argentinos</title>
+    <meta name="description" content="Harmony Corporation desarrolla software de gestión comercial robusto, autónomo y offline para pequeñas y medianas empresas en Argentina." />
+    <meta property="og:title" content="Harmony Corporation" />
+    <meta property="og:description" content="Soluciones de software a medida para el comercio argentino. Confiables, offline y sin suscripciones." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+
+    <!-- Promo Banner -->
+    <div id="promo-bar" class="promo-bar" role="complementary" aria-label="Anuncio destacado">
+      <p class="promo-text">
+        <strong>Harmony Business Manager ya disponible</strong> &middot;
+        Solicitá tu demo sin cargo.
+        <a href="./harmony-business-manager.html#contacto" class="promo-link">Conocé el producto →</a>
+      </p>
+      <button id="promo-close" class="promo-close" aria-label="Cerrar anuncio">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6"  x2="6"  y2="18"></line>
+          <line x1="6"  y1="6"  x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="container navbar">
+
+        <a href="./index.html" class="brand" aria-label="Harmony Corporation — Inicio">
+          <img src="./assets/harmony-logo-cyan.png" alt="Harmony Corporation" class="brand-logo" width="36" height="36" />
+          <span class="brand-text">Harmony Corporation</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#que-hacemos"  class="nav-link">Qué hacemos</a>
+          <a href="#productos"    class="nav-link">Productos</a>
+          <a href="#por-que"      class="nav-link">Por qué elegirnos</a>
+          <a href="./about.html"  class="nav-link">Nosotros</a>
+          <a href="#contacto"     class="nav-link">Contacto</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="#contacto" class="btn btn-primary">Hablemos de tu proyecto</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav-drawer"
+          aria-label="Abrir menú de navegación"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile nav -->
+      <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Menú móvil">
+        <nav class="mobile-nav-content" aria-label="Navegación móvil">
+          <a href="#que-hacemos"  class="mobile-nav-link">Qué hacemos</a>
+          <a href="#productos"    class="mobile-nav-link">Productos</a>
+          <a href="#por-que"      class="mobile-nav-link">Por qué elegirnos</a>
+          <a href="./about.html"  class="mobile-nav-link">Nosotros</a>
+          <a href="#contacto"     class="mobile-nav-link">Contacto</a>
+          <div class="mobile-nav-cta">
+            <a href="#contacto" class="btn btn-primary" style="width:100%;">Hablemos de tu proyecto</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main-content">
+
+      <!-- HERO -->
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="container hero-layout">
+
+          <div class="hero-content reveal-on-scroll">
+            <div class="hero-eyebrow">
+              <span>Software de gestión · Hecho en Argentina</span>
+            </div>
+
+            <h1 id="hero-heading">
+              Soluciones de software hechas a la medida de tu negocio.
+            </h1>
+
+            <p class="hero-subtitle">
+              En Harmony Corporation desarrollamos software de escritorio robusto, confiable
+              y autónomo para comercios y empresas argentinas. Local, sin sorpresas.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contacto"  class="btn btn-primary btn-lg">Contanos tu proyecto</a>
+              <a href="#productos" class="btn btn-secondary btn-lg">Ver nuestros productos</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal-on-scroll delay-2">
+            <div class="hero-logo-display" aria-hidden="true">
+              <img src="./assets/harmony-logo-cyan.png" alt="" width="512" height="512" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- QUÉ HACEMOS -->
+      <hr class="section-divider" aria-hidden="true" />
+      <section id="que-hacemos" class="what-we-do-section" aria-labelledby="what-heading">
+        <div class="container">
+
+          <div class="section-header reveal-on-scroll">
+            <span class="section-kicker">Nuestro enfoque</span>
+            <h2 id="what-heading" class="section-title">Software pensado para la realidad local</h2>
+            <p class="section-desc">
+              No vendemos licencias genéricas. Desarrollamos soluciones que entienden el contexto
+              del comercio argentino: cortes de internet, normativa ARCA, múltiples medios de pago
+              y operaciones de mostrador que no pueden frenarse.
+            </p>
+          </div>
+
+          <div class="services-grid">
+
+            <article class="service-card reveal-on-scroll delay-1">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3>Aplicaciones de escritorio</h3>
+              <p>
+                Software nativo para Windows, optimizado para hardware de mostrador: lectores de código
+                de barras, impresoras de tickets y cajas registradoras.
+              </p>
+            </article>
+
+            <article class="service-card reveal-on-scroll delay-2">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+              <h3>Desarrollo a medida</h3>
+              <p>
+                Cada negocio tiene procesos únicos. Trabajamos junto al cliente para entender sus
+                flujos reales y construir exactamente lo que necesita, sin funciones de relleno.
+              </p>
+            </article>
+
+            <article class="service-card reveal-on-scroll delay-3">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3>Base de datos local</h3>
+              <p>
+                Toda la información del negocio reside en el equipo del cliente. Sin servidores
+                remotos, sin riesgo de pérdida por caída de servicio, con respaldo en manos propias.
+              </p>
+            </article>
+
+            <article class="service-card reveal-on-scroll delay-4">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3>Soporte cercano</h3>
+              <p>
+                Conocemos a nuestros clientes por su nombre. El soporte es directo con el equipo
+                de desarrollo, sin call centers ni tickets perdidos.
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTOS -->
+      <hr class="section-divider" aria-hidden="true" />
+      <section id="productos" class="products-section" aria-labelledby="products-heading">
+        <div class="container">
+
+          <div class="section-header reveal-on-scroll">
+            <span class="section-kicker">Nuestro ecosistema</span>
+            <h2 id="products-heading" class="section-title">Productos que ya están funcionando</h2>
+            <p class="section-desc">
+              Harmony Business Manager es nuestro primer producto de uso general.
+              Más soluciones están en desarrollo para distintos rubros y necesidades.
+            </p>
+          </div>
+
+          <div class="products-grid">
+
+            <article class="product-card product-card--flagship reveal-on-scroll delay-1" aria-label="Harmony Business Manager — Producto insignia">
+              <div class="product-card-header">
+                <img src="./assets/harmony-logo-violet.png" alt="Harmony Business Manager" class="product-logo" width="48" height="48" />
+                <div class="product-badge">Disponible ahora</div>
+              </div>
+              <h3>Harmony Business Manager</h3>
+              <p class="product-tagline">Punto de venta y gestión comercial 100% offline para comercios argentinos.</p>
+              <ul class="product-highlights">
+                <li>Punto de Venta con scanner de código de barras</li>
+                <li>Dashboard, historial de ventas y control de stock</li>
+                <li>Clientes, proveedores y cuentas corrientes</li>
+                <li>Roles: Administrador, Encargado y Cajero</li>
+                <li>Facturación con numeración ARCA</li>
+		<li>Reportes</li>
+
+              </ul>
+              <a href="./harmony-business-manager.html" class="btn btn-primary">Ver producto completo →</a>
+            </article>
+
+            <article class="product-card product-card--carnival reveal-on-scroll delay-2" aria-label="Harmony Carnival — Próximo producto">
+              <div class="product-card-header">
+                <img src="./assets/harmony-logo-peach.png" alt="Harmony Carnival" class="product-logo" width="48" height="48" />
+                <div class="product-badge product-badge--soon">En desarrollo</div>
+              </div>
+              <h3>Harmony Carnival</h3>
+              <p class="product-tagline">Punto de venta y gestión comercial desde tu mano, pensado para feriantes rosarinos.</p>
+              <ul class="product-highlights">
+		<li>Punto de Venta Mobile, llevalo con vos</li>
+		<li>Integración con Mercado Pago</li>
+		<li>Seguimiento de Clientes</li>
+		<li>Tickets por mail</li>
+		<li>Spam.. digo promocioná dónde vas a estar</li>
+		<li>Reportes</li>
+
+              </ul>
+              <a href="#contacto" class="btn btn-outline-accent">Consultá por tu sector</a>
+            </article>
+	    
+	    <article class="product-card product-card--next reveal-on-scroll delay-3" aria-label="Próximo producto en desarrollo">
+              <div class="product-card-header">
+                <img src="./assets/harmony-logo-emerald.png" alt="Próxima solución Harmony" class="product-logo" width="48" height="48" />
+                <div class="product-badge product-badge--soon">En desarrollo</div>
+              </div>
+              <h3>Próxima solución</h3>
+              <p class="product-tagline">Una nueva herramienta diseñada para un rubro específico del mercado argentino.</p>
+              <p class="product-coming-desc">
+                Estamos trabajando en nuevas soluciones orientadas a necesidades concretas
+                de sectores aún no cubiertos. Si tenés un proyecto en mente, contanos.
+              </p>
+              <a href="#contacto" class="btn btn-outline-accent">Consultá por tu sector</a>
+            </article>
+
+            <!-- Placeholder: custom solutions card -->
+            <article class="product-card product-card--custom reveal-on-scroll delay-4" aria-label="Soluciones a medida">
+              <div class="product-card-header">
+                <div class="product-logo-placeholder product-logo-placeholder--custom" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                    <path d="M4.93 4.93a10 10 0 0 0 0 14.14"></path>
+                  </svg>
+                </div>
+                <div class="product-badge product-badge--custom">A medida</div>
+              </div>
+              <h3>Solución personalizada</h3>
+              <p class="product-tagline">¿Tenés un proceso específico que ningún software estándar cubre bien?</p>
+              <p class="product-coming-desc">
+                Desarrollamos desde cero para tu flujo de trabajo. Analizamos tus necesidades
+                y construimos exactamente lo que tu negocio requiere.
+              </p>
+              <a href="#contacto" class="btn btn-outline-accent">Contanos tu proyecto</a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- HARMONY CORPORATION -->
+      <hr class="section-divider" aria-hidden="true" />
+      <section id="por-que" class="why-section" aria-labelledby="why-heading">
+        <div class="container">
+
+          <div class="section-header reveal-on-scroll">
+            <span class="section-kicker">Nuestra filosofía</span>
+            <h2 id="why-heading" class="section-title">Software que existe para durar</h2>
+            <p class="section-desc">
+              Cada decisión de diseño y arquitectura está tomada pensando en la estabilidad
+              y la independencia del cliente a largo plazo.
+            </p>
+          </div>
+
+          <div class="values-grid">
+
+            <div class="value-item reveal-on-scroll delay-1">
+              <div class="value-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h4>Tus datos son tuyos</h4>
+              <p>La información de tu negocio nunca sale de tu equipo. Sin sincronización con servidores externos, sin riesgo de exposición, sin dependencia.</p>
+            </div>
+
+            <div class="value-item reveal-on-scroll delay-2">
+              <div class="value-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="1"  y1="1"  x2="23" y2="23"></line>
+                  <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path>
+                  <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path>
+                  <path d="M10.71 5.05A16 16 0 0 1 22.56 9"></path>
+                  <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path>
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                  <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                </svg>
+              </div>
+              <h4>Funciona sin internet</h4>
+              <p>Un corte de fibra no frena tu caja. El software opera completamente offline; la conexión es opcional, nunca obligatoria.</p>
+              <p class="value-disclaimer">* Algunas funciones pueden requerir conexión por integraciones de terceros.</p>
+            </div>
+
+            <div class="value-item reveal-on-scroll delay-3">
+              <div class="value-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                  <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+              </div>
+              <h4>Facturación ARCA y cobro multimedios</h4>
+              <p>Comprobantes con numeración oficial ARCA. Cobrá con efectivo, tarjetas, transferencias, billeteras virtuales QR y cuentas corrientes.</p>
+            </div>
+
+            <div class="value-item reveal-on-scroll delay-4">
+              <div class="value-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h4>Construido para el mercado argentino</h4>
+              <p>ARCA, múltiples medios de pago, cuentas corrientes, IVA diferenciado por producto. No adaptamos software extranjero — lo hacemos desde acá.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <hr class="section-divider" aria-hidden="true" />
+      <section id="contacto" class="contact-section" aria-labelledby="contact-heading">
+        <div class="container contact-layout">
+
+          <div class="contact-info reveal-on-scroll">
+            <span class="section-kicker">Escribinos</span>
+            <h2 id="contact-heading">Contanos qué necesitás</h2>
+            <p>
+              Ya sea que quieras conocer Harmony Business Manager o tengas un proyecto
+              de software a medida en mente, estamos para escucharte.
+            </p>
+
+            <ul class="contact-detail-list">
+              <li class="contact-detail-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Correo electrónico</h4>
+                  <p><a href="mailto:gonza.harmony@gmail.com">gonza.harmony@gmail.com</a></p>
+                </div>
+              </li>
+
+              <li class="contact-detail-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Horario de atención</h4>
+                  <p>Lunes a Viernes · 9:00 a 18:00 hs (Argentina)</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrapper reveal-on-scroll delay-1">
+            <form id="contact-form" class="contact-form" novalidate aria-label="Formulario de contacto">
+              <fieldset>
+                <legend class="visually-hidden">Datos de contacto</legend>
+
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Nombre y apellido <span aria-hidden="true">*</span></label>
+                  <input type="text"  id="form-name"     name="name"     class="form-input"    placeholder="Ej. Juan Pérez"                         required autocomplete="name" />
+                  <span class="form-error" role="alert">Por favor ingresá tu nombre.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Correo electrónico <span aria-hidden="true">*</span></label>
+                  <input type="email" id="form-email"    name="email"    class="form-input"    placeholder="nombre@tucomercio.com.ar"                required autocomplete="email" />
+                  <span class="form-error" role="alert">Por favor ingresá un correo válido.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-phone" class="form-label">Teléfono / WhatsApp <span aria-hidden="true">*</span></label>
+                  <input type="tel"   id="form-phone"    name="phone"    class="form-input"    placeholder="Ej. 11 4455-6677"                        required autocomplete="tel" />
+                  <span class="form-error" role="alert">Por favor ingresá un teléfono de contacto.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-business" class="form-label">Comercio y rubro <span aria-hidden="true">*</span></label>
+                  <input type="text"  id="form-business" name="business" class="form-input"    placeholder="Ej. Almacén Don Mario · Alimentos"       required />
+                  <span class="form-error" role="alert">Por favor indicá tu comercio y rubro.</span>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <label for="form-message" class="form-label">Mensaje <span aria-hidden="true">*</span></label>
+                  <textarea id="form-message" name="message" class="form-textarea" rows="4"
+                    placeholder="Contanos qué necesitás: demo de HBM, desarrollo a medida, consulta general..."
+                    required></textarea>
+                  <span class="form-error" role="alert">Por favor ingresá tu mensaje.</span>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <button type="submit" class="btn btn-primary btn-lg form-submit">Enviar consulta</button>
+                  <p class="form-notice">Respondemos dentro de las 24 horas hábiles.</p>
+                </div>
+              </fieldset>
+            </form>
+
+            <div id="form-success" class="form-success" role="status" aria-live="polite" hidden>
+              <div class="form-success-icon" aria-hidden="true">✓</div>
+              <h3>¡Mensaje recibido!</h3>
+              <p>Gracias por escribirnos. Te respondemos a la brevedad para coordinar una demo o una reunión.</p>
+              <button id="form-reset" type="button" class="btn btn-secondary">Enviar otra consulta</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-top">
+
+          <div class="footer-brand-col">
+            <a href="./index.html" class="footer-brand" aria-label="Harmony Corporation">
+              <img src="./assets/harmony-logo-cyan.png" alt="Harmony Corporation" class="footer-brand-logo" width="32" height="32" />
+              <span class="footer-brand-text">Harmony Corporation</span>
+            </a>
+            <p class="footer-desc">
+              Desarrollamos software de escritorio robusto, autónomo y 100% offline
+              para pequeñas y medianas empresas en Argentina.
+            </p>
+            <p class="footer-badge">Software local · Sin dependencias de nube</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul class="footer-links">
+              <li><a href="#que-hacemos">Qué hacemos</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#por-que">Por qué elegirnos</a></li>
+              <li><a href="./about.html">Nosotros</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Productos</h4>
+            <ul class="footer-links">
+              <li><a href="./harmony-business-manager.html">Harmony Business Manager</a></li>
+              <li><a href="./harmony-business-manager.html#caracteristicas">Características</a></li>
+              <li><a href="./harmony-business-manager.html#modulos">Módulos</a></li>
+              <li><a href="./harmony-business-manager.html#demostracion">Demo y capturas</a></li>
+              <li><a href="./harmony-business-manager.html#contacto">Solicitar demo</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Harmony Corporation. Todos los derechos reservados.</p>
+          <p>Harmony Business Manager es un producto de Harmony Corporation.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>

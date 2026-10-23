@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmony Business Manager — Punto de venta y gestión comercial offline</title>
+    <meta name="description" content="Harmony Business Manager: software de punto de venta y gestión comercial 100% offline para comercios argentinos. Facturación ARCA, control de stock, cuentas corrientes y más." />
+    <meta property="og:title" content="Harmony Business Manager — Harmony Corporation" />
+    <meta property="og:description" content="Software de punto de venta y gestión comercial 100% offline para comercios argentinos." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body data-theme="hbm">
+
+    <!-- Promo Banner -->
+    <div id="promo-bar" class="promo-bar" role="complementary" aria-label="Anuncio destacado">
+      <p class="promo-text">
+        <strong>Harmony Business Manager ya disponible</strong> &middot;
+        Solicitá tu demo sin cargo.
+        <a href="#contacto" class="promo-link">Ver demo →</a>
+      </p>
+      <button id="promo-close" class="promo-close" aria-label="Cerrar anuncio">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6"  x2="6"  y2="18"></line>
+          <line x1="6"  y1="6"  x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="container navbar">
+
+        <a href="./index.html" class="brand" aria-label="Harmony Corporation — Inicio">
+          <img src="./assets/harmony-logo-violet.png" alt="Harmony Business Manager" class="brand-logo" width="36" height="36" />
+          <span class="brand-text">Harmony Business Manager</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#caracteristicas" class="nav-link">Características</a>
+          <a href="#modulos"         class="nav-link">Módulos</a>
+          <a href="#como-funciona"   class="nav-link">Cómo funciona</a>
+          <a href="#demostracion"    class="nav-link">Demostración</a>
+          <a href="#contacto"        class="nav-link">Contacto</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="#contacto" class="btn btn-primary">Solicitar demo</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav-drawer"
+          aria-label="Abrir menú de navegación"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile nav -->
+      <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Menú móvil">
+        <nav class="mobile-nav-content" aria-label="Navegación móvil">
+          <a href="#caracteristicas" class="mobile-nav-link">Características</a>
+          <a href="#modulos"         class="mobile-nav-link">Módulos</a>
+          <a href="#como-funciona"   class="mobile-nav-link">Cómo funciona</a>
+          <a href="#demostracion"    class="mobile-nav-link">Demostración</a>
+          <a href="#contacto"        class="mobile-nav-link">Contacto</a>
+          <div class="mobile-nav-cta">
+            <a href="#contacto" class="btn btn-primary" style="width:100%;">Solicitar demo</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+
+      <!-- HERO -->
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="container hero-layout">
+
+          <div class="hero-content reveal-on-scroll">
+            <div class="hero-eyebrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span>Aplicación de escritorio Windows · 100% Offline</span>
+            </div>
+
+            <h1 id="hero-heading">
+              Gestión comercial y punto de venta ágil, confiable y sin internet.
+            </h1>
+
+            <p class="hero-subtitle">
+              Harmony Business Manager es la solución integral para el comercio argentino.
+              Facturá con agilidad, controlá tu stock y gestioná cuentas corrientes en tu propia
+              computadora, con base de datos local y sin depender de suscripciones en la nube.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contacto"    class="btn btn-primary btn-lg">Solicitar demo</a>
+              <a href="#demostracion" class="btn btn-secondary btn-lg">Ver capturas del sistema</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal-on-scroll delay-2">
+            <div class="hero-logo-display" aria-hidden="true">
+              <img src="./assets/harmony-logo-violet.png" alt="" width="512" height="512" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TRUST STRIP -->
+      <hr class="section-divider" aria-hidden="true" />
+      <section class="trust-strip" aria-label="Garantías del sistema">
+        <div class="container">
+          <div class="trust-grid">
+
+            <div class="trust-item reveal-on-scroll delay-1">
+              <div class="trust-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="trust-text">
+                <h4>100% Offline y seguro</h4>
+                <p>Toda la información reside en tu equipo con base de datos local embebida.</p>
+              </div>
+            </div>
+
+            <div class="trust-item reveal-on-scroll delay-2">
+              <div class="trust-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+              </div>
+              <div class="trust-text">
+                <h4>Comprobantes ARCA</h4>
+                <p>Numeración formal con formato Punto de Venta + número secuencial.</p>
+              </div>
+            </div>
+
+            <div class="trust-item reveal-on-scroll delay-3">
+              <div class="trust-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                  <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+              </div>
+              <div class="trust-text">
+                <h4>Cobro multimedios</h4>
+                <p>Efectivo, tarjetas, transferencias, billeteras virtuales QR y cuentas corrientes.</p>
+              </div>
+            </div>
+
+            <div class="trust-item reveal-on-scroll delay-4">
+              <div class="trust-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="trust-text">
+                <h4>Sin suscripción mensual</h4>
+                <p>Software autónomo sin dependencias de servicios externos ni pagos recurrentes.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CARACTERÍSTICAS -->
+      <hr class="section-divider" aria-hidden="true" />
+      <section id="caracteristicas" class="features-section" aria-labelledby="features-heading">
+        <div class="container">
+
+          <div class="section-header reveal-on-scroll">
+            <span class="section-kicker">Diseñado para tu mostrador</span>
+            <h2 id="features-heading" class="section-title">Pensado para la realidad del negocio argentino</h2>
+            <p class="section-desc">
+              Cada funcionalidad responde a las necesidades concretas del día a día: rapidez al atender,
+              control de caja riguroso y tranquilidad absoluta ante cortes de red.
+            </p>
+          </div>
+
+          <div class="features-grid">
+
+            <article class="feature-card reveal-on-scroll delay-1">
+              <div class="feature-card-header">
+                <div class="feature-icon-badge" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 5h2"></path><path d="M3 10h2"></path><path d="M3 15h2"></path><path d="M3 20h2"></path>
+                    <path d="M8 5v15"></path><path d="M12 5v15"></path><path d="M17 5v15"></path>
+                    <path d="M21 5h-2"></path><path d="M21 10h-2"></path><path d="M21 15h-2"></path><path d="M21 20h-2"></path>
+                  </svg>
+                </div>
+                <h3>Velocidad en el Punto de Venta</h3>
+              </div>
+              <p>Optimizá el despacho en ventanilla sin demoras. Diseñado para trabajar con scanner de código de barras y operar íntegramente desde el teclado cuando el local está lleno.</p>
+              <ul class="feature-bullets">
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Escaneo ultra veloz de códigos EAN-8 y EAN-13</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Atajos rápidos: multiplicador de cantidad y teclas F1 a F12</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Múltiples medios de pago: Efectivo, Débito, Crédito, Transferencia, QR y Cuentas corrientes</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Alta inmediata de cliente en plena venta sin cancelar el ticket</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Numeración fiscal con formato oficial ARCA (POS + secuencial)</span></li>
+              </ul>
+            </article>
+
+            <article class="feature-card reveal-on-scroll delay-2">
+              <div class="feature-card-header">
+                <div class="feature-icon-badge" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6"  y1="20" x2="6"  y2="14"></line>
+                  </svg>
+                </div>
+                <h3>Módulos Integrales de Gestión</h3>
+              </div>
+              <p>Todas las herramientas que el dueño o encargado necesita para supervisar el negocio, organizadas de manera intuitiva en una barra lateral siempre accesible.</p>
+              <ul class="feature-bullets">
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Dashboard con KPIs diarios: facturación, ventas y ticket promedio</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Historial de ventas con filtros de fecha, medio de pago y reimpresión</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Catálogo de artículos con alícuotas de IVA diferenciadas (21%, 10.5%, etc.)</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Control de stock con seguimiento de lotes y fechas de vencimiento</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Libreta de clientes con cuentas corrientes y compras a proveedores</span></li>
+              </ul>
+            </article>
+
+            <article class="feature-card reveal-on-scroll delay-1">
+              <div class="feature-card-header">
+                <div class="feature-icon-badge" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <h3>Privacidad y Confiabilidad Offline</h3>
+              </div>
+              <p>Tu negocio no puede frenarse por un corte de internet o problemas de un servidor remoto. Harmony Business Manager opera 100% en tu máquina Windows.</p>
+              <ul class="feature-bullets">
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Tus datos son tuyos: nunca salen de tu computadora local</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Base de datos local embebida y optimizada para máxima velocidad</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Cero dependencia de conexión a internet para cobrar o consultar inventario</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Sin riesgo de suspensiones por pagos mensuales o caídas de nube</span></li>
+              </ul>
+            </article>
+
+            <article class="feature-card reveal-on-scroll delay-2">
+              <div class="feature-card-header">
+                <div class="feature-icon-badge" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h3>Control de Acceso por Roles</h3>
+              </div>
+              <p>Mantené protegida la información financiera reservada. Asigná perfiles con permisos estrictos según las responsabilidades de cada integrante de tu equipo.</p>
+              <ul class="feature-bullets">
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Roles configurados: Administrador, Encargado y Cajero</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Los cajeros acceden solo a la pantalla de venta y cobro sin ver costos</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Arqueo de caja al cierre de turno con apertura obligatoria al iniciar sesión</span></li>
+                <li><span class="bullet-check" aria-hidden="true">✓</span><span>Protección total de informes de ganancias, proveedores y compras</span></li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- MÓDULOS -->
+      <hr class="section-divider" aria-hidden="true" />
+      <section id="modulos" class="modules-section" aria-labelledby="modules-heading">
+        <div class="container">
+
+          <div class="section-header reveal-on-scroll">
+            <span class="section-kicker">Estructura del sistema</span>
+            <h2 id="modules-heading" class="section-title">Módulos integrados en una única aplicación</h2>
+            <p class="section-desc">Accedé a todas las áreas de gestión desde una barra lateral ágil y clara.</p>
+          </div>
+
+          <div class="modules-grid">
+
+            <div class="module-item reveal-on-scroll delay-1">
+              <div class="module-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </div>
+              <h4>Dashboard</h4>
+              <p>Métricas clave en vivo: recaudación del día, ticket promedio, ventas por hora y alertas de reposición.</p>
+            </div>
+
+            <div class="module-item reveal-on-scroll delay-2">
+              <div class="module-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+              </div>
+              <h4>Punto de Venta</h4>
+              <p>Despacho veloz con lector de código de barras, cálculo automático de vueltos y emisión de tickets.</p>
+            </div>
+
+            <div class="module-item reveal-on-scroll delay-3">
+              <div class="module-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+              </div>
+              <h4>Historial de Ventas</h4>
+              <p>Registro ordenado con comprobantes oficiales ARCA, filtros por fecha/forma de cobro y reimpresión.</p>
+            </div>
+
+            <div class="module-item reveal-on-scroll delay-4">
+              <div class="module-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+              </div>
+              <h4>Catálogo de Productos</h4>
+              <p>Códigos EAN, asignación de alícuotas de IVA por producto y administración de precios.</p>
+            </div>
+
+            <div class="module-item reveal-on-scroll delay-1">
+              <div class="module-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+              </div>
+              <h4>Stock por Lotes</h4>
+              <p>Inventario con trazabilidad por número de partida y alertas de fecha de vencimiento para perecederos.</p>
+            </div>
+
+            <div class="module-item reveal-on-scroll delay-2">
+              <div class="module-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h4>Clientes y Cuentas Corrientes</h4>
+              <p>Seguimiento de saldos fiados, pagos parciales, recibos y fijación de límites de crédito por cliente.</p>
+            </div>
+
+            <div class="module-item reveal-on-scroll delay-3">
+              <div class="module-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h4>Caja y Turnos de Trabajo</h4>
+              <p>Apertura con saldo inicial, control de ingresos/egresos y arqueo detallado al cierre de cada turno.</p>
+            </div>
+
+            <div class="module-item reveal-on-scroll delay-4">
+              <div class="module-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"></path>
+                  <path d="M2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"></path>
+                  <path d="M7 21h10"></path><path d="M12 3v18"></path>
+                </svg>
+              </div>
+              <h4>Proveedores y Compras</h4>
+              <p>Recepción de mercadería, actualización directa de costos de compra e incremento de stock disponible.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CÓMO FUNCIONA -->
+      <hr class="section-divider" aria-hidden="true" />
+      <section id="como-funciona" class="how-it-works-section" aria-labelledby="how-heading">
+        <div class="container">
+
+          <div class="section-header reveal-on-scroll">
+            <span class="section-kicker">Flujo de trabajo simple</span>
+            <h2 id="how-heading" class="section-title">Empezá a operar en tres pasos claros</h2>
+            <p class="section-desc">
+              Sin configuraciones complejas ni capacitaciones extensas. Diseñado para comenzar
+              a atender en tu mostrador de manera inmediata.
+            </p>
+          </div>
+
+          <div class="steps-container">
+
+            <div class="step-card reveal-on-scroll delay-1">
+              <div class="step-number" aria-hidden="true">01</div>
+              <h3>Configuración de tu comercio</h3>
+              <p>Definí el nombre de tu local, los datos de punto de venta fiscal ARCA, las alícuotas de IVA aplicables a tus rubros y los medios de pago que vas a aceptar en tu caja.</p>
+            </div>
+
+            <div class="step-card reveal-on-scroll delay-2">
+              <div class="step-number" aria-hidden="true">02</div>
+              <h3>Carga de productos y parámetros</h3>
+              <p>Registrá tus artículos con su código de barras, precio de costo y venta, control de stock mínimo y seguimiento por lote si manejás productos perecederos. Cargá tu listado de clientes frecuentes para habilitar cuentas corrientes.</p>
+            </div>
+
+            <div class="step-card reveal-on-scroll delay-3">
+              <div class="step-number" aria-hidden="true">03</div>
+              <h3>Atención en mostrador y control</h3>
+              <p>Abrí el turno de caja con tu fondo inicial, atendé a tus clientes con rapidez mediante atajos de teclado y lector óptico, cobrá con cualquier método y cerrá el día con el arqueo exacto y métricas claras en el Dashboard.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- DEMOSTRACIÓN -->
+      <hr class="section-divider" aria-hidden="true" />
+      <section id="demostracion" class="gallery-section" aria-labelledby="demo-heading">
+        <div class="container">
+
+          <div class="section-header reveal-on-scroll">
+            <span class="section-kicker">Conocé la interfaz</span>
+            <h2 id="demo-heading" class="section-title">Capturas reales de Harmony Business Manager</h2>
+            <p class="section-desc">
+              Hacé clic en cualquier pantalla para explorarla en alta resolución.
+              Una interfaz limpia, moderna y pensada para no cansar la vista durante largas jornadas.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+
+            <figure class="gallery-figure reveal-on-scroll delay-1" data-gallery-index="0">
+              <div class="gallery-image-wrapper">
+                <img
+                  src="./assets/images/screenshot_dashboard.png"
+                  alt="Dashboard de Harmony Business Manager con KPIs del día: ingresos, ventas, ticket promedio y alertas de stock"
+                  width="1512" height="810" loading="lazy"
+                />
+                <div class="gallery-zoom-overlay" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Ampliar</span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="figcaption-title">Dashboard principal con KPIs</span>
+                <span class="figcaption-desc">Ingresos del día, ventas, ticket promedio, actividad reciente y alertas de stock</span>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-figure reveal-on-scroll delay-2" data-gallery-index="1">
+              <div class="gallery-image-wrapper">
+                <img
+                  src="./assets/images/screenshot_pos.png"
+                  alt="Pantalla de Punto de Venta con búsqueda de productos, carrito y panel de cobro con múltiples métodos de pago"
+                  width="1512" height="810" loading="lazy"
+                />
+                <div class="gallery-zoom-overlay" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Ampliar</span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="figcaption-title">Punto de Venta (POS) rápido</span>
+                <span class="figcaption-desc">Carga de artículos, IVA incluido, cliente opcional y cobro con múltiples medios</span>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-figure reveal-on-scroll delay-1" data-gallery-index="2">
+              <div class="gallery-image-wrapper">
+                <img
+                  src="./assets/images/screenshot_sales_history.png"
+                  alt="Historial de ventas con filtros, sumario de ingresos por método de pago y listado de comprobantes"
+                  width="1512" height="810" loading="lazy"
+                />
+                <div class="gallery-zoom-overlay" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Ampliar</span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="figcaption-title">Historial de ventas y comprobantes</span>
+                <span class="figcaption-desc">Filtros por fecha y método de pago, sumario contable y detalle por venta</span>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-figure reveal-on-scroll delay-2" data-gallery-index="3">
+              <div class="gallery-image-wrapper">
+                <img
+                  src="./assets/images/screenshot_products.png"
+                  alt="Catálogo de productos con SKU, costo, precio, stock y estado de disponibilidad"
+                  width="1512" height="810" loading="lazy"
+                />
+                <div class="gallery-zoom-overlay" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Ampliar</span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="figcaption-title">Catálogo de productos</span>
+                <span class="figcaption-desc">SKU, costo, precio de venta, stock disponible y alertas de low stock</span>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-figure reveal-on-scroll delay-3" data-gallery-index="4">
+              <div class="gallery-image-wrapper">
+                <img
+                  src="./assets/images/screenshot_customers.png"
+                  alt="Módulo de clientes con listado, saldos de cuentas corrientes y panel de registro de cobro"
+                  width="1512" height="810" loading="lazy"
+                />
+                <div class="gallery-zoom-overlay" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Ampliar</span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="figcaption-title">Clientes y Cuentas Corrientes</span>
+                <span class="figcaption-desc">Saldos fiados, registro de cobros parciales y detalle de cliente</span>
+              </figcaption>
+            </figure>
+
+          </div>
+
+          <!-- Video placeholder -->
+          <div class="video-wrapper-card reveal-on-scroll">
+            <div class="video-header-info">
+              <h3>Demostración en video del sistema</h3>
+              <p>Mirá un recorrido guiado por las funciones principales de Harmony Business Manager.</p>
+            </div>
+            <div class="demo-video-placeholder" role="region" aria-label="Reproductor de video de demostración">
+              <div class="video-interactive-stage" tabindex="0" role="button" aria-label="Reproducir video de demostración">
+                <div class="video-play-btn" aria-hidden="true">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </div>
+                <div class="video-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Recorrido del software en tiempo real</span>
+                </div>
+              </div>
+              <div class="video-scrubber-bar" aria-hidden="true">
+                <div class="video-scrubber-progress"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <hr class="section-divider" aria-hidden="true" />
+      <section id="contacto" class="contact-section" aria-labelledby="contact-heading">
+        <div class="container contact-layout">
+
+          <div class="contact-info reveal-on-scroll">
+            <span class="section-kicker">Contacto comercial</span>
+            <h2 id="contact-heading">Contactanos para más información</h2>
+            <p>
+              ¿Tenés dudas sobre cómo se adapta Harmony Business Manager a tu rubro?
+              Comunicate con nosotros y te orientamos sobre las mejores prácticas para tu comercio.
+            </p>
+
+            <ul class="contact-detail-list">
+              <li class="contact-detail-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Correo electrónico</h4>
+                  <p><a href="mailto:gonza.harmony@gmail.com">gonza.harmony@gmail.com</a></p>
+                </div>
+              </li>
+
+              <li class="contact-detail-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Horario de atención</h4>
+                  <p>Lunes a Viernes · 9:00 a 18:00 hs (Argentina)</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrapper reveal-on-scroll delay-1">
+            <form id="contact-form" class="contact-form" novalidate aria-label="Formulario de contacto">
+              <fieldset>
+                <legend class="visually-hidden">Datos de contacto</legend>
+
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Nombre y apellido <span aria-hidden="true">*</span></label>
+                  <input type="text"  id="form-name"     name="name"     class="form-input" placeholder="Ej. Juan Pérez"               required autocomplete="name" />
+                  <span class="form-error" role="alert">Por favor ingresá tu nombre.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Correo electrónico <span aria-hidden="true">*</span></label>
+                  <input type="email" id="form-email"    name="email"    class="form-input" placeholder="nombre@tucomercio.com.ar"      required autocomplete="email" />
+                  <span class="form-error" role="alert">Por favor ingresá un correo válido.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-phone" class="form-label">Teléfono / WhatsApp <span aria-hidden="true">*</span></label>
+                  <input type="tel"   id="form-phone"    name="phone"    class="form-input" placeholder="Ej. 11 4455-6677"              required autocomplete="tel" />
+                  <span class="form-error" role="alert">Por favor ingresá un teléfono de contacto.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-business" class="form-label">Comercio y rubro <span aria-hidden="true">*</span></label>
+                  <input type="text"  id="form-business" name="business" class="form-input" placeholder="Ej. Almacén Don Mario · Alimentos" required />
+                  <span class="form-error" role="alert">Por favor indicá tu comercio y rubro.</span>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <label for="form-message" class="form-label">Mensaje <span aria-hidden="true">*</span></label>
+                  <textarea id="form-message" name="message" class="form-textarea" rows="4"
+                    placeholder="Contanos qué necesitás: demo, consulta sobre módulos, cantidad de puestos..."
+                    required></textarea>
+                  <span class="form-error" role="alert">Por favor ingresá tu mensaje.</span>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <button type="submit" class="btn btn-primary btn-lg form-submit">Enviar consulta</button>
+                  <p class="form-notice">Respondemos dentro de las 24 horas hábiles.</p>
+                </div>
+              </fieldset>
+            </form>
+
+            <div id="form-success" class="form-success" role="status" aria-live="polite" hidden>
+              <div class="form-success-icon" aria-hidden="true">✓</div>
+              <h3>¡Mensaje recibido!</h3>
+              <p>Gracias por escribirnos. Te respondemos a la brevedad para coordinar una demo o una reunión.</p>
+              <button id="form-reset" type="button" class="btn btn-secondary">Enviar otra consulta</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-top">
+
+          <div class="footer-brand-col">
+            <a href="./index.html" class="footer-brand" aria-label="Harmony Corporation">
+              <img src="./assets/harmony-logo-cyan.png" alt="Harmony Corporation" class="footer-brand-logo" width="32" height="32" />
+              <span class="footer-brand-text">Harmony Corporation</span>
+            </a>
+            <p class="footer-desc">
+              Desarrollamos software de escritorio robusto, autónomo y 100% offline
+              para pequeñas y medianas empresas en Argentina.
+            </p>
+            <p class="footer-badge">Software local · Sin dependencias de nube</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Harmony Business Manager</h4>
+            <ul class="footer-links">
+              <li><a href="#caracteristicas">Características</a></li>
+              <li><a href="#modulos">Módulos del sistema</a></li>
+              <li><a href="#como-funciona">Cómo funciona</a></li>
+              <li><a href="#demostracion">Capturas y demo</a></li>
+              <li><a href="#contacto">Solicitar demo</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Harmony Corporation</h4>
+            <ul class="footer-links">
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./index.html#que-hacemos">Qué hacemos</a></li>
+              <li><a href="./index.html#productos">Productos</a></li>
+              <li><a href="./about.html">Nosotros</a></li>
+              <li><a href="./index.html#contacto">Contacto</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Harmony Corporation. Todos los derechos reservados.</p>
+          <p>Harmony Business Manager es un producto de Harmony Corporation.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visor de capturas de pantalla">
+      <div class="lightbox-container">
+        <div class="lightbox-header">
+          <span id="lightbox-title" class="lightbox-title">Captura del sistema</span>
+          <button id="lightbox-close-btn" class="lightbox-close-btn" aria-label="Cerrar visor">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="lightbox-body">
+          <button id="lightbox-prev-btn" class="lightbox-nav-btn lightbox-prev-btn" aria-label="Captura anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <img id="lightbox-image" src="" alt="" />
+          <button id="lightbox-next-btn" class="lightbox-nav-btn lightbox-next-btn" aria-label="Captura siguiente">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="lightbox-caption">
+          <span id="lightbox-desc">Descripción de la captura</span>
+          <span id="lightbox-counter" class="tabular-nums">1 de 5</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal" role="dialog" aria-modal="true" aria-label="Demostración en video">
+      <div class="video-modal-card">
+        <div class="video-modal-header">
+          <h4>Demostración de Harmony Business Manager</h4>
+          <button id="video-modal-close" class="lightbox-close-btn" aria-label="Cerrar reproductor">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="video-modal-body">
+          <div class="video-modal-preview">
+            <img
+              src="./assets/images/screenshot_pos.png"
+              alt="Demostración guiada del software en el mostrador"
+            />
+            <div class="video-modal-overlay">
+              <p class="video-modal-label">RECORRIDO EN TIEMPO REAL</p>
+              <h3>Punto de Venta, Arqueo de Caja y Facturación ARCA</h3>
+              <p>Espacio preparado para video. Para una demostración interactiva personalizada, dejanos tus datos en el formulario de contacto.</p>
+            </div>
+          </div>
+          <div class="video-modal-footer">
+            <a href="#contacto" class="btn btn-primary" id="video-modal-cta">Solicitar demostración guiada</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>
