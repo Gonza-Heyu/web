@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const inputs = contactForm.querySelectorAll('.form-input, .form-textarea');
@@ -170,9 +170,34 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      contactForm.hidden = true;
-      formSuccess.hidden = false;
-      formSuccess.focus();
+      const submitBtn = contactForm.querySelector('.form-submit');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name:     contactForm.querySelector('#form-name').value.trim(),
+            email:    contactForm.querySelector('#form-email').value.trim(),
+            phone:    contactForm.querySelector('#form-phone').value.trim(),
+            business: contactForm.querySelector('#form-business').value.trim(),
+            message:  contactForm.querySelector('#form-message').value.trim(),
+          })
+        });
+
+        if (!res.ok) throw new Error('Server error');
+
+        contactForm.hidden = true;
+        formSuccess.hidden = false;
+        formSuccess.focus();
+
+      } catch (err) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar consulta';
+        alert('Hubo un error al enviar el mensaje. Por favor intentá de nuevo.');
+      }
     });
 
     if (formReset) {

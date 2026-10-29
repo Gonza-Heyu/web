@@ -964,6 +964,19 @@ p  { color: var(--text-secondary); font-size: 1rem; line-height: 1.6; }
   color: var(--text-disabled);
 }
 
+.footer-col--haiku {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.footer-col--haiku p {
+  font-size: 0.8125rem;
+  color: var(--text-disabled);
+  font-style: italic;
+  line-height: 1.6;
+}
+
 .footer-col h4 {
   font-size: 0.875rem;
   font-weight: 600;
@@ -1059,7 +1072,7 @@ p  { color: var(--text-secondary); font-size: 1rem; line-height: 1.6; }
 
   /* Footer */
   .footer-top {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
   }
 
   .footer-bottom {
