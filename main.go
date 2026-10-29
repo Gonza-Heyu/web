@@ -23,7 +23,7 @@ var db *pgxpool.Pool
 func initDB() {
 	dsn := os.Getenv("DB_DSN")
 	if dsn == "" {
-		log.Fatal("DB_DSN not set")
+		dsn = "host=localhost port=5432 dbname=harmony_web user=postgres password=tu_password sslmode=disable"
 	}
 
 	var err error
